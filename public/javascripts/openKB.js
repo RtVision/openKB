@@ -110,7 +110,7 @@ $(document).ready(function(){
         var simplemde = new SimpleMDE({
             element: $('#editor')[0],
             spellChecker: config.enable_spellchecker,
-            toolbar: ['bold', 'italic', 'heading', '|', 'quote', 'unordered-list', 'ordered-list', '|', 'link', 'image', '|', 'table', 'horizontal-rule', 'code', 'guide']
+            toolbar: ['bold', 'italic', 'strikethrough', 'heading', '|', 'quote', 'unordered-list', 'ordered-list', '|', 'link', 'image', '|', 'table', 'horizontal-rule', 'code', 'guide']
         });
 
         // setup inline attachments
@@ -258,7 +258,8 @@ $(document).ready(function(){
         var cleanHTML = sanitizeHtml(fixed_html, {
             allowedTags: [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote', 'p', 'a', 'ul', 'ol',
                 'nl', 'li', 'b', 'i', 'strong', 'em', 'strike', 'code', 'hr', 'br', 'div',
-                'table', 'thead', 'caption', 'tbody', 'tr', 'th', 'td', 'pre', 'img', 'iframe'
+                'table', 'thead', 'caption', 'tbody', 'tr', 'th', 'td', 'pre', 'img', 'iframe',
+                'details', 'summary', 's'
             ],
             allowedAttributes: false
         });

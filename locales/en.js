@@ -183,5 +183,7 @@
 	"A user with that email does not exist.": "A user with that email does not exist.",
 	"Visible state": "Visible state",
 	"Public": "Public",
-	"Private": "Private"
+	"Private": "Private",
+	"User is admin?": "User is admin?",
+	"User account updated.": "User account updated."
 }
